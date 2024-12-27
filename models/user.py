@@ -1,4 +1,4 @@
-from app import db, bcrypt
+from backend.app import db, bcrypt
 from sqlalchemy.ext.hybrid import hybrid_property
 
 
