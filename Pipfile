@@ -9,6 +9,9 @@ sqlalchemy = "*"
 flask-cors = "*"
 flask-bcrypt = "*"
 marshmallow = "*"
+pylint = "*"
+pyjwt = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

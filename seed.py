@@ -1,5 +1,5 @@
-from app import app, db
-from models.user import UserModel
+from backend.app import app, db
+from backend.models.user import UserModel
 
 with app.app_context():
     try:

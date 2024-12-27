@@ -1,5 +1,5 @@
-from backend.app import db, bcrypt
 from sqlalchemy.ext.hybrid import hybrid_property
+from backend.app import db, bcrypt
 
 
 class UserModel(db.Model):
@@ -8,7 +8,7 @@ class UserModel(db.Model):
     first_name = db.Column(db.Text, unique=False, nullable=False)
     last_name = db.Column(db.Text, unique=False, nullable=False)
     email = db.Column(db.Text, unique=True, nullable=False)
-    password_hash = db.Column(db.Text, nullable=False)
+    password_hash = db.Column(db.Text, nullable=True)
 
     @hybrid_property
     def password(self):

@@ -25,4 +25,3 @@ marsh = Marshmallow(app)
 from backend.controllers import users
 
 app.register_blueprint(users.router, url_prefix="/api")
-
